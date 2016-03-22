@@ -1,5 +1,5 @@
 # Novatus
-Applikation update system with client server
+C# Applikation update system "client server"  for Windows aplications 
 
 ## History!
 
