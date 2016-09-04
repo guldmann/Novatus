@@ -39,8 +39,8 @@
             // 
             // MinimizenotifyIcon
             // 
-            this.MinimizenotifyIcon.BalloonTipText = "Test tip";
-            this.MinimizenotifyIcon.BalloonTipTitle = "Test";
+            this.MinimizenotifyIcon.BalloonTipText = "Novatus is minimized to systemtry";
+            this.MinimizenotifyIcon.BalloonTipTitle = "Info";
             this.MinimizenotifyIcon.ContextMenuStrip = this.contextMenuStripMinMaxClose;
             this.MinimizenotifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("MinimizenotifyIcon.Icon")));
             this.MinimizenotifyIcon.Text = "Novatus Update Client";
@@ -54,27 +54,29 @@
             this.showToolStripMenuItem,
             this.closeToolStripMenuItem});
             this.contextMenuStripMinMaxClose.Name = "contextMenuStripMinMaxClose";
-            this.contextMenuStripMinMaxClose.Size = new System.Drawing.Size(174, 80);
+            this.contextMenuStripMinMaxClose.Size = new System.Drawing.Size(115, 52);
             // 
             // showToolStripMenuItem
             // 
             this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(173, 38);
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.showToolStripMenuItem.Text = "Show";
             this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(173, 38);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // UpdateClientForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 648);
+            this.ClientSize = new System.Drawing.Size(639, 415);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UpdateClientForm";
             this.Text = "Novatus Update Client";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateClientForm_FormClosing);
