@@ -20,8 +20,8 @@ namespace Chared
         public string UpdateMSG { get; set; }
         public string RootDir { get; set; }
         public string TempDir { get; set; }
-        List<RegKeys> RegKeyList { get; set; } 
-        List<Actions> ActionList { get; set; }
+        List<RegKey> RegKeyList { get; set; } 
+        List<Action> ActionList { get; set; }
         public string ContentFileName { get; set;}
     }
 }
