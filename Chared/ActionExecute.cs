@@ -7,13 +7,13 @@ namespace Chared
     class ActionExecute
     {        
         /// <summary>
-        /// Executs the specified actions in  list.
+        /// Execute the specified actions in  list.
         /// 
-        /// NOTE if execute fail do we whant to stop update  by returning false  ?  
+        /// NOTE if execute fail do we want to stop update  by returning false  ?  
         /// </summary>
         /// <param name="actionList">The action list.</param>
         /// <param name="when">The when. to execute </param>
-        /// <returns>bool true or false</returns>
+        /// <returns>Bool true or false</returns>
         public bool Execut(List<Action> actionList, string when)
         {
             if (actionList != null && actionList.Count > 0)
