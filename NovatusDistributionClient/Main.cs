@@ -12,19 +12,19 @@ namespace NovatusDistributionClient
 {
     public class Main
     {
-        public bool GetUpdate(string updateinfoFile)
+        public bool GetUpdate(string applicationInfoFile)
         {
-            if (File.Exists(updateinfoFile))
+            if (File.Exists(applicationInfoFile))
             {
-                var updateInfo = ReadFile(updateinfoFile);
+                var updateInfo = ReadFile(applicationInfoFile);
                 CheckForUpdate(updateInfo);
             }
             return false; 
         }
 
-        private UpdateAppInfo ReadFile(string updatefile)
+        private UpdateAppInfo ReadFile(string applicationInfoFile)
         {
-            string jsonText = File.ReadAllText(updatefile);
+            string jsonText = File.ReadAllText(applicationInfoFile);
             return JsonConvert.DeserializeObject<UpdateAppInfo>(jsonText);
         }
 

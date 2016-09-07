@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chared
 {
-    public class RegKey
+    public enum ActionWhen
     {
-        public string RegDir { get; set; }
-        public string Key { get; set; }
-        public string Value { get; set; }
+        Before, 
+        After
     }
 }
