@@ -11,8 +11,6 @@ namespace Chared
         public string RootPath { get; set; }
 		public long FileSize { get; set;  } 
 
-
-
         public bool Equals(FileItem other)
         {
 	        if (Object.ReferenceEquals(other, null)) return false;
