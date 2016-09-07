@@ -10,11 +10,9 @@ namespace Chared
     {
 		public string ApplicationName { get; set; }
         string ApplicationVersion { get; set; }
-        string VersionInfoMSG { get; set; }
-		List<RegKey> RegKeyList { get; set; }
+        public List<RegKey> RegKeyList { get; set; }
 		public string ContentFileName { get; set; }
 		public string TempDir { get; set; }
-		List<UpdateServer> ServerList { get; set; }
-		
+		public List<UpdateServer> ServerList { get; set; }
 	}
 }

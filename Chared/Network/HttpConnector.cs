@@ -1,43 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Chared.Network
 {
-    class HttpConnector
+    public class HttpConnector
     {
-
-        public UpdateAppInfo GetServer(UpdateAppInfo localAppVersion)
-        {
+		/// <summary>
+		/// Takes a VersionInifo and get a Versionlist from server
+		/// </summary>
+		/// <param name="localVersion"></param>
+		/// <returns></returns>
+        public VersionList GetVersionList(VersionInfo localVersion)
+		{
+			string versionList; 
             try
             {
                 WebClient wc = new WebClient();
-                wc.DownloadFile(localAppVersion., localPath + filename);
+				versionList = Path.Combine(localVersion.TempDir + "Versionlist.json"); 
+                wc.DownloadFile(localVersion.ServerList[0].Url, versionList);
                 wc.Dispose();
-                return true;
             }
             catch (Exception ex)
             {
-                logger.Error("Fail download file: " + fileUrl, ex);
-                return false;
+	            return null; 
             }
-
-
-
-
-
-
-
-            string jsonText = File.ReadAllText(applicationInfoFile);
-            return JsonConvert.DeserializeObject<UpdateAppInfo>(jsonText);
-
-
-
+            string jsonText = File.ReadAllText(versionList);
+            return JsonConvert.DeserializeObject<VersionList>(jsonText);
         }
     }
 }

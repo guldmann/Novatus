@@ -57,7 +57,9 @@
     <Compile Include="SHA256Hash.cs" />
     <Compile Include="UpdateAppInfo.cs" />
     <Compile Include="UpdateServer.cs" />
+    <Compile Include="Version.cs" />
     <Compile Include="VersionInfo.cs" />
+    <Compile Include="VersionList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
