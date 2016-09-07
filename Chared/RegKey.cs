@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Chared
 {
-    public class RegKey
-    {
-        public string RegDir { get; set; }
-        public string Key { get; set; }
-        public string Value { get; set; }
-    }
+	public class RegKey
+	{
+		public string RegDir { get; set; }
+		public string Key { get; set; }
+		public string Value { get; set; }
+	}
 }

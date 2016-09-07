@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chared
 {
-    public enum ActionWhen
-    {
-        Before, 
-        After
-    }
+	public enum ActionWhen
+	{
+		Before, 
+		After
+	}
 }
