@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateServiceLibrary", "UpdateServiceLibrary\UpdateServiceLibrary.csproj", "{55A0488F-4B46-48E4-B8B7-28E4B01435EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C5995D6F-D732-4E21-9B32-45A42EAC59CF} = {C5995D6F-D732-4E21-9B32-45A42EAC59CF}
+		{AC9E4BD4-3977-43FC-95F9-FE2A41FCDFC5} = {AC9E4BD4-3977-43FC-95F9-FE2A41FCDFC5}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chared", "Chared\Chared.csproj", "{C5995D6F-D732-4E21-9B32-45A42EAC59CF}"
 EndProject
@@ -11,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogSystem", "LogSystem\LogS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminClient", "AdminClient\AdminClient.csproj", "{81A62960-63F9-43CE-81B6-F7DD1B270B27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdatedClient", "UpdatedClient\UpdatedClient.csproj", "{43741526-6AEA-4E9B-974E-D9D37CFF4CF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateClient", "UpdatedClient\UpdateClient.csproj", "{43741526-6AEA-4E9B-974E-D9D37CFF4CF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateMiniClient", "UpdateMiniClient\UpdateMiniClient.csproj", "{1AEB62BF-8811-4E89-9FD2-93675B39764D}"
 EndProject
