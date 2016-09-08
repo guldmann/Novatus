@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Action.cs" />
     <Compile Include="ActionExecute.cs" />
+    <Compile Include="ActionStartStop.cs" />
+    <Compile Include="ActionWhen.cs" />
     <Compile Include="FileItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Protocol.cs" />

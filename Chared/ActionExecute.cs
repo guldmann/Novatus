@@ -14,7 +14,7 @@ namespace Chared
         /// <param name="actionList">The action list.</param>
         /// <param name="when">The when. to execute </param>
         /// <returns>Bool true or false</returns>
-        public bool Execut(List<Action> actionList, string when)
+        public bool Execut(List<Action> actionList, ActionWhen when)
         {
             if (actionList != null && actionList.Count > 0)
             {
@@ -22,7 +22,7 @@ namespace Chared
                 {
                     if (action.When == when)
                     {
-                        if (action.StartStop == "start")
+                        if (action.StartStop == ActionStartStop.Start)
                         {
                             if (!ActionStart(action)) return false; 
                         }

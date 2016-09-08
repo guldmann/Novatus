@@ -12,13 +12,8 @@ namespace Chared
         public string Port { get; set; }
         public string Ip { get; set; }
         public string CertDomain { get; set; }
-        private string _protocol { get; set; }
+        private CommunicationProtocol Protocol { get; set; }
         public string UserName { get; set; } = null;
-        public string Password { get; set; } = null; 
-
-        public CommunicationProtocol Protocol
-        {
-            get { return (CommunicationProtocol) Enum.Parse(typeof (CommunicationProtocol), _protocol); }
-        }
+        public string Password { get; set; } = null;         
     }
 }
