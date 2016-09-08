@@ -2,39 +2,39 @@
 
 namespace Chared
 {
-    public static class RandomStringGenerator
-    {
-        private static Random random;
-        const string UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        const string LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
-        const string NUMBERS = "0123456789";
-        const string SYMBOLS = @"~`!@#$%^&*()-_=+<>?:,./\[]{}|'";
+	public static class RandomStringGenerator
+	{
+		private static Random random;
+		const string UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		const string LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
+		const string NUMBERS = "0123456789";
+		const string SYMBOLS = @"~`!@#$%^&*()-_=+<>?:,./\[]{}|'";
 
-        static RandomStringGenerator()
-        {
-            random = new Random();
-        }
-        public static string NextString(int length)
-        {
-            return StringGenerator(length);
-        }
+		static RandomStringGenerator()
+		{
+			random = new Random();
+		}
+		public static string NextString(int length)
+		{
+			return StringGenerator(length);
+		}
 
-        private static string StringGenerator(int length, bool lowerCase = true, bool upperCase = true, bool numbers = true, bool symbols = true)
-        {
-            char[] charArray = new char[length];
-            string charPool = string.Empty;
+		private static string StringGenerator(int length, bool lowerCase = true, bool upperCase = true, bool numbers = true, bool symbols = true)
+		{
+			char[] charArray = new char[length];
+			string charPool = string.Empty;
 
-            if (lowerCase) charPool += LOWERCASE;
-            if (upperCase) charPool += UPPERCASE;
-            if (numbers) charPool += NUMBERS;
-            if (symbols) charPool += SYMBOLS;
+			if (lowerCase) charPool += LOWERCASE;
+			if (upperCase) charPool += UPPERCASE;
+			if (numbers) charPool += NUMBERS;
+			if (symbols) charPool += SYMBOLS;
 
-            for (int i = 0; i < charArray.Length; i++)
-            {
-                int index = random.Next(0, charPool.Length);
-                charArray[i] = charPool[index];
-            }
-            return new string(charArray);
-        }
-    }
+			for (int i = 0; i < charArray.Length; i++)
+			{
+				int index = random.Next(0, charPool.Length);
+				charArray[i] = charPool[index];
+			}
+			return new string(charArray);
+		}
+	}
 }

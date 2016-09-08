@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chared
 {
-	class Action
+	public class Action
 	{
 		public string Name { get; set; }
 		public string FilePath { get; set; }
@@ -15,7 +15,7 @@ namespace Chared
 		public string Args { get; set; }
 		public string WorkingDir { get; set; }
 		public ActionStartStop StartStop { get; set; }
-        public bool WaiteForExit { get; set; }
-        public int TimeToWaitForExit { get; set; } = 0; 
+		public bool WaiteForExit { get; set; }
+		public int TimeToWaitForExit { get; set; } = 0; 
 	}
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chared
 {
-   public enum ActionStartStop
-    {
-        Start,
-        Stop
-    }
+	public enum ActionStartStop
+	{
+		Start, 
+		Stop
+	}
 }

@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Chared
 {
-	public class RegKey
+	public class Version
 	{
-		public string RegDir { get; set; }
-		public string Key { get; set; }
-		public string Value { get; set; }
+
+		public string ApplicationVersion { get; set; }
+		public UpdateAppInfo UpdateAppInfo { get; set; }
+
+
 	}
 }

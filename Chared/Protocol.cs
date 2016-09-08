@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Chared
 {
-    public enum CommunicationProtocol
-    {
-        Http,
-        Ftp,
-        Wcf
-    }
+	public enum CommunicationProtocol
+	{
+		Http,
+		Ftp,
+		Wcf
+	}
 }

@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Chared
 {
-    class VersionInfo
-    {
-        string versionNumber { get; set; }
-        string VersionInfoMSG { get; set; }
-    }
+	public class VersionInfo
+	{
+		public string ApplicationName { get; set; }
+		string ApplicationVersion { get; set; }
+		public List<RegKey> RegKeyList { get; set; }
+		public string ContentFileName { get; set; }
+		public string TempDir { get; set; }
+		public List<UpdateServer> ServerList { get; set; }
+	}
 }
