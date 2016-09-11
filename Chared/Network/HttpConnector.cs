@@ -1,38 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Chared.Network
 {
-    class HttpConnector
+    public class HttpConnector
     {
-        public bool GetUpdateExist(UpdateAppInfo localAppVersion, int ServerListNumber)
+        /// <summary>
+        /// Takes a VersionInifo and get a Versionlist from server
+        /// </summary>
+        /// <param name="localVersion"></param>
+        /// <returns></returns>
+        public VersionList GetVersionList(VersionInfo localVersion)
         {
+            string versionList;
             try
             {
                 WebClient wc = new WebClient();
-                wc.DownloadFile(localAppVersion.ServerList[ServerListNumber].Url, localAppVersion.TempDir + localAppVersion.FileName);
+                versionList = Path.Combine(localVersion.TempDir + "Versionlist.json");
+                wc.DownloadFile(localVersion.ServerList[0].Url, versionList);
                 wc.Dispose();
-                var ServerAppVersion = GetObjectFromFile(Path.Combine(localAppVersion.TempDir, localAppVersion.FileName));
-                if(ServerAppVersion.ApllicationVersion > localAppVersion.ApllicationVersion)
-
             }
             catch (Exception ex)
             {
-               // TODO loging in here 
-                return null; 
+                return null;
             }
-        }
-
-        private UpdateAppInfo GetObjectFromFile(string file)
-        {
-            string jsonText = File.ReadAllText(file);
-            return JsonConvert.DeserializeObject<UpdateAppInfo>(jsonText);
+            string jsonText = File.ReadAllText(versionList);
+            return JsonConvert.DeserializeObject<VersionList>(jsonText);
         }
     }
 }
+
