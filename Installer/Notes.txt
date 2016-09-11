@@ -1,0 +1,18 @@
+﻿TODO.  
+
+
+Set form name to  Setup  + application name  and add icon 
+  
+  browse for install dir 
+  write install dir to settings file and to regedit 
+  write uninstall info 
+
+  [next > ] [cancel] buttons 
+
+  first install info screen 
+
+  Extra componets ?  
+
+  progress bar  start update service 
+
+  Add to desktop or startmenu

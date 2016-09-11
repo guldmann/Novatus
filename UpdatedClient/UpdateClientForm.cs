@@ -5,6 +5,7 @@ namespace UpdatedClient
 {
 	public partial class UpdateClientForm : Form
 	{
+		private string[] args = Environment.GetCommandLineArgs(); 
 		public UpdateClientForm()
 		{
 			InitializeComponent();
@@ -52,5 +53,20 @@ namespace UpdatedClient
 		}
 		#endregion
 
+		private void UpdateClientForm_Load(object sender, EventArgs e)
+		{
+			
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			// test code 
+			string somString = ""; 
+			foreach (var arg in args	)
+			{
+				somString += arg; 
+			}
+			MessageBox.Show(somString);
+		}
 	}
 }

@@ -34,6 +34,7 @@
 			this.contextMenuStripMinMaxClose = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.button1 = new System.Windows.Forms.Button();
 			this.contextMenuStripMinMaxClose.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -51,8 +52,8 @@
 			// 
 			this.contextMenuStripMinMaxClose.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.contextMenuStripMinMaxClose.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.showToolStripMenuItem,
-			this.closeToolStripMenuItem});
+            this.showToolStripMenuItem,
+            this.closeToolStripMenuItem});
 			this.contextMenuStripMinMaxClose.Name = "contextMenuStripMinMaxClose";
 			this.contextMenuStripMinMaxClose.Size = new System.Drawing.Size(115, 52);
 			// 
@@ -70,16 +71,28 @@
 			this.closeToolStripMenuItem.Text = "Close";
 			this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(200, 152);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 1;
+			this.button1.Text = "button1";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
 			// UpdateClientForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(639, 415);
+			this.Controls.Add(this.button1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "UpdateClientForm";
 			this.Text = "Novatus Update Client";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateClientForm_FormClosing);
+			this.Load += new System.EventHandler(this.UpdateClientForm_Load);
 			this.Resize += new System.EventHandler(this.UpdateClientForm_Resize);
 			this.contextMenuStripMinMaxClose.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -92,6 +105,7 @@
 		private System.Windows.Forms.ContextMenuStrip contextMenuStripMinMaxClose;
 		private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+		private System.Windows.Forms.Button button1;
 	}
 }
 

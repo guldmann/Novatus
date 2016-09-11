@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovatusServer", "NovatusSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovatusDistributionClient", "NovatusDistributionClient\NovatusDistributionClient.csproj", "{15DDCE6D-5F86-40AE-8C25-12CAC1667D3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{700DF1D2-627B-4548-91B4-435FCD53249D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{15DDCE6D-5F86-40AE-8C25-12CAC1667D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15DDCE6D-5F86-40AE-8C25-12CAC1667D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15DDCE6D-5F86-40AE-8C25-12CAC1667D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700DF1D2-627B-4548-91B4-435FCD53249D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700DF1D2-627B-4548-91B4-435FCD53249D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700DF1D2-627B-4548-91B4-435FCD53249D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700DF1D2-627B-4548-91B4-435FCD53249D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
