@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>
+
+This wizard will guide you through the installer of application 
+
+It is recommended that you close all other applications before starting setup. Thiswill make it possible to update 
+relevant system files without having to reboot you computer 
+
+Click Next to continue
+</value>
+  </data>
 </root>
