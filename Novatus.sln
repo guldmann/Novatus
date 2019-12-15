@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateServiceLibrary", "UpdateServiceLibrary\UpdateServiceLibrary.csproj", "{55A0488F-4B46-48E4-B8B7-28E4B01435EC}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -24,6 +24,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovatusDistributionClient", "NovatusDistributionClient\NovatusDistributionClient.csproj", "{15DDCE6D-5F86-40AE-8C25-12CAC1667D3E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{700DF1D2-627B-4548-91B4-435FCD53249D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovatusCommon", "NovatusCommon\NovatusCommon.csproj", "{3237055E-61BE-447D-9807-65ABA6A9E3F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8B971DB9-C8FA-450C-AF9A-9FA20A68E8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovatusCommonTest", "NovatusCommonTest\NovatusCommonTest.csproj", "{5403A9C3-7762-458A-A115-9B49CDA988EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,8 +73,22 @@ Global
 		{700DF1D2-627B-4548-91B4-435FCD53249D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{700DF1D2-627B-4548-91B4-435FCD53249D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{700DF1D2-627B-4548-91B4-435FCD53249D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3237055E-61BE-447D-9807-65ABA6A9E3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3237055E-61BE-447D-9807-65ABA6A9E3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3237055E-61BE-447D-9807-65ABA6A9E3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3237055E-61BE-447D-9807-65ABA6A9E3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5403A9C3-7762-458A-A115-9B49CDA988EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5403A9C3-7762-458A-A115-9B49CDA988EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5403A9C3-7762-458A-A115-9B49CDA988EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5403A9C3-7762-458A-A115-9B49CDA988EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5403A9C3-7762-458A-A115-9B49CDA988EF} = {8B971DB9-C8FA-450C-AF9A-9FA20A68E8A9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6763885D-75C0-4C0E-A3A7-BBE2533A973C}
 	EndGlobalSection
 EndGlobal
