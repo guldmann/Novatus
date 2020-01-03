@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NovatusCommon.Models
+﻿namespace NovatusCommon.Models
 {
     public class ServerUpdateAppInfo
     {
@@ -10,7 +6,7 @@ namespace NovatusCommon.Models
         /// Application name, Gives the ability to change the application name from a client perspective.
         /// </summary>
         public string AppName { get; set; }
-       
+
         //public string FileName { get; set; }
 
         /// <summary>
@@ -20,12 +16,12 @@ namespace NovatusCommon.Models
         public UpdateServer UpdateServer { get; set; }
 
         /// <summary>
-        /// The update (new) version of application. 
+        /// The update (new) version of application.
         /// </summary>
         public string AppVersion { get; set; }
 
         /// <summary>
-        /// Information text to client / user what is new or changed in this version. 
+        /// Information text to client / user what is new or changed in this version.
         /// </summary>
         public string UpdateInformation { get; set; }
 
@@ -37,13 +33,13 @@ namespace NovatusCommon.Models
         ///// <summary>
         ///// Actions to perform at the time of update.
         ///// This can be used to trigger CMD commands before or after update,
-        ///// Like killing a process or run a program to update database. 
-        ///// 
+        ///// Like killing a process or run a program to update database.
+        /////
         ///// </summary>
         //public List<Action> ActionList { get; set; }
 
         /// <summary>
-        /// Name of the content file for this version. 
+        /// Name of the content file for this version.
         /// </summary>
         public string ContentFile { get; set; }
     }

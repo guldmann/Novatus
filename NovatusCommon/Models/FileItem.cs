@@ -29,6 +29,8 @@ namespace NovatusCommon.Models
         /// </summary>
         public string FilePathFromRoot { get; set; }
 
+        public string RootDir { get; set; }
+
         /// <summary>
         /// the size of the file, could be useful for progressbar.
         /// </summary>

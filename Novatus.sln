@@ -25,11 +25,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovatusDistributionClient",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{700DF1D2-627B-4548-91B4-435FCD53249D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovatusCommon", "NovatusCommon\NovatusCommon.csproj", "{3237055E-61BE-447D-9807-65ABA6A9E3F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NovatusCommon", "NovatusCommon\NovatusCommon.csproj", "{3237055E-61BE-447D-9807-65ABA6A9E3F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8B971DB9-C8FA-450C-AF9A-9FA20A68E8A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovatusCommonTest", "NovatusCommonTest\NovatusCommonTest.csproj", "{5403A9C3-7762-458A-A115-9B49CDA988EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NovatusCommonTest", "NovatusCommonTest\NovatusCommonTest.csproj", "{5403A9C3-7762-458A-A115-9B49CDA988EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovotusClient", "NovotusClient\NovotusClient.csproj", "{DD735FAE-FD67-43E4-B26E-B2B05BDFF65A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{5403A9C3-7762-458A-A115-9B49CDA988EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5403A9C3-7762-458A-A115-9B49CDA988EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5403A9C3-7762-458A-A115-9B49CDA988EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD735FAE-FD67-43E4-B26E-B2B05BDFF65A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD735FAE-FD67-43E4-B26E-B2B05BDFF65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD735FAE-FD67-43E4-B26E-B2B05BDFF65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD735FAE-FD67-43E4-B26E-B2B05BDFF65A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
